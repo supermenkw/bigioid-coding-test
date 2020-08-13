@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    </style>
+    <title>Palindrome</title>
+</head>
+<body>
+        <p style="display: inline;">Klik untuk menambah karakter</p>
+        <button onclick="addField()">+</button>
+        <div id="input-fields">
+        </div>
+        <button onclick="func()">Process</button>
+        <br>
+        <p id="result"></p>
+        
+
+    <script>
+        const add = document.querySelector('#add-field');
+        const inputFieldsContainer = document.querySelector('#input-fields');
+        const process = document.querySelector('#process');
+        const result = document.querySelector('#result')
+        
+        const addField = () => inputFieldsContainer.innerHTML += `<input type="text" class="foo" maxlength="1" size="1">`;
+
+        const func = () => {
+            const allInput = document.querySelectorAll('.foo');
+            const leftArr = [];
+            const rightArr = [];
+            let i;
+
+            for(i = 0; i <= allInput.length-1; i++){
+                leftArr.push(allInput[i].value);
+                rightArr.push(allInput[i].value);
+            }
+            
+            rightArr.reverse().shift();
+            result.innerHTML = leftArr.join('')  + rightArr.join('');
+        }
+
+    </script>
+</body>
+</html>

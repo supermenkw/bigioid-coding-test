@@ -1,0 +1,26 @@
+.navbar-store {
+  padding-top: 15px;
+
+  @include media-breakpoint-down(md) {
+    background-color: #fff !important;
+  }
+
+  .nav-item {
+    .nav-link {
+      @include media-breakpoint-up(lg) {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .profile-picture {
+    object-fit: cover; width:50px; height:50px;
+  }
+
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}

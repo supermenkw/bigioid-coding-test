@@ -1,0 +1,97 @@
+@extends('layouts.app')
+
+@section('title')
+    Komodata - All Commodity
+@endsection
+
+@section('content')
+<div class="page-content page-home">
+    <section class="store-trend-categories">
+    <div class="container">
+        <div class="row">
+            <div class="col-12" data-aos="fade-up">
+                <h4>All Comodity Categories Categories</h4>
+            </div>
+            </div>
+            <div class="row">
+            @php
+                $incrementCategory = 0;
+            @endphp
+            @forelse ($categories as $category)
+                <div
+                class="col-6 col-md-3 col-lg-2"
+                data-aos="fade-up"
+                data-aos-delay="{{ $incrementCategory += 100 }}"
+                >
+                    <a class="component-categories d-block" href="{{ route('categories-detail', $category->slug) }}">
+                        <div class="categories-image text-center">
+                            <img
+                                src="{{ url($category->photo) }}"
+                                alt="{{ $category->name }}"
+                                class="w-50"
+                            />
+                        </div>
+                        <p class="categories-text">
+                            {{ $category->name  }}
+                        </p>
+                    </a>
+                </div>
+            @empty
+            <h3 class="col-12 text-center py-5 h4 text-secondary"
+                data-aos="fade-up"
+                data-aos-delay="100">
+                Category Not Found
+            </h3>
+            @endforelse
+        </div>
+    </div>
+    </section>
+
+    <section class="store-new-products">
+    <div class="container">
+        <div class="row">
+            <div class="col-12" data-aos="fade-up">
+                <h5>All Commodity</h5>
+            </div>
+        </div>
+        <div class="row">
+                <table class="table"
+                    data-aos="fade-up"
+                    data-aos-delay="100">
+                <thead>
+                    <tr>
+                        <th scope="col">Commodity</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Unit</th>
+                        <th scope="col">Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @php
+                        $increment = 0;
+                    @endphp
+                    @forelse ($commodities as $commodity)
+                    <tr>
+                        <td>{{ $commodity->name }}</td>
+                        <td>{{ $commodity->price }}</td>
+                        <td>{{ $commodity->units }}</td>
+                        <td>{{ $commodity->updated_at }}</td>
+                    </tr>
+                    @empty
+                        <th colspan="4" class="text-center">No Commodity</th>
+                    @endforelse
+                </tbody>
+            </table>
+        </div>
+        <div class="row justify-content-center">
+            <div class="mt-5"
+                data-aos="fade-up"
+                data-aos-delay="100">
+                {{ $commodities->links() }}
+            </div>
+        </div>
+    </div>
+    </section>
+</div>
+    
+@endsection

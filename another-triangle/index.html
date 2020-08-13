@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #app {
+        display: flex;
+        flex-direction: column;
+        }
+
+        #app > pre {
+        margin: 0px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    
+    <script>
+        function hPatterByNumberGenerator(maxNum) {
+            let payload = ''
+
+            const maxIterator = maxNum * 2
+            let iteratorMon = 1
+            for (let i=1; i < maxIterator; i++) {
+                let text = ""
+                let iterator = 1
+
+                for (let j=1; j < maxIterator; j++) {    
+                if (iterator <= iteratorMon) {
+                    text = `${iterator}${text}`
+                }
+                else {
+                    text = ` ${text}`
+                }
+                
+                if (j < maxNum) {
+                    iterator++
+                }
+                else {
+                    iterator--
+                }
+                }
+
+                if (i < maxNum) {
+                iteratorMon++
+                }
+                else {
+                iteratorMon--
+                }
+                payload += `<pre>${text}</pre>`
+            }
+
+            return payload
+        }
+
+        const hPattern = hPatterByNumberGenerator(5);
+        document.getElementById("app").innerHTML = hPattern;
+    </script>
+</body>
+</html>

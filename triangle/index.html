@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Triangle</title>
+</head>
+<body>
+    <label for="xValue">f(x)</label>
+    <input type="text" id="xValue">
+    <button onclick="func()">process</button>
+
+    <script>
+        const func = (xValue) => {
+            const container =  document.querySelector('#container');
+            xValue = document.querySelector('#xValue').value;
+            const yValue = xValue - 1;
+            
+
+            for (var i = 0; i < xValue; i++) {
+                for (var j = 0; j < i; j++) {
+                    document.write("&nbsp;&nbsp;");
+                }
+                for (var j = xValue; j > i; j--) {
+                    document.write("*");
+                    document.write("&nbsp;&nbsp;");
+                }
+                document.write('</br>')
+            }
+            for (i = 1; i < xValue; i++ ) {
+                for ( j = 0; j < yValue-i; j++ ) {
+                    document.write( "&nbsp;&nbsp;" );
+                }
+                for ( j = xValue-i; j <= xValue; j++ ) {
+                    document.write("*");
+                    document.write("&nbsp;&nbsp;");
+                }
+                document.write("</br>");
+            }
+        }
+    </script>
+</body>
+</html>
