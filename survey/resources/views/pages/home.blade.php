@@ -59,7 +59,7 @@
         </div>
     </section>
 
-    <section class="store-trend-categories">
+    <section class="custom-categories">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center" data-aos="fade-up">
@@ -100,7 +100,7 @@
         </div>
     </section>
 
-    <section class="store-new-products">
+    <section class="custom-table">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center" data-aos="fade-up">

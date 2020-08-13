@@ -10840,24 +10840,24 @@ form-control {
   background-color: #f3f3f3;
 }
 
-.navbar-store {
+.navbar-custom {
   padding-top: 15px;
 }
 
 @media (max-width: 991.98px) {
-  .navbar-store {
+  .navbar-custom {
     background-color: #fff !important;
   }
 }
 
 @media (min-width: 992px) {
-  .navbar-store .nav-item .nav-link {
+  .navbar-custom .nav-item .nav-link {
     margin-left: 10px;
     margin-right: 10px;
   }
 }
 
-.navbar-store .profile-picture {
+.navbar-custom .profile-picture {
   -o-object-fit: cover;
      object-fit: cover;
   width: 50px;
@@ -10875,85 +10875,12 @@ form-control {
   margin-bottom: 20px;
 }
 
-.page-home .store-trend-categories {
+.page-home .custom-categories {
   margin-top: 30px;
 }
 
-.page-home .store-new-product {
+.page-home .custom-table {
   margin-top: 10px;
-}
-
-.page-details h5 {
-  color: #0c0d36;
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.page-details .store-heading {
-  margin-bottom: 10px;
-}
-
-.page-details .store-heading h1 {
-  font-size: 24px;
-  line-height: 36px;
-  margin-bottom: 0px;
-  color: #0c0d36;
-}
-
-.page-details .store-heading .owner {
-  font-weight: 200;
-  font-size: 14px;
-  line-height: 21px;
-  color: #979797;
-  margin-bottom: 8px;
-}
-
-.page-details .store-heading .price {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  color: #c00500;
-  margin-bottom: 10px;
-}
-
-.page-details .store-gallery {
-  margin-bottom: 20px;
-}
-
-.page-details .store-gallery img {
-  border-radius: 10px;
-}
-
-.page-details .store-gallery .thumbnail-image {
-  margin-bottom: 20px;
-  border: 2px solid transparent;
-}
-
-.page-details .store-gallery .thumbnail-image:hover, .page-details .store-gallery .thumbnail-image.active {
-  border: 2px solid #c00500;
-}
-
-.page-details .store-description p {
-  font-size: 16px;
-  color: #525252;
-  line-height: 180%;
-}
-
-.page-details .store-review .media img {
-  max-width: 50px;
-}
-
-.page-details .store-review .media-body {
-  font-size: 16px;
-  line-height: 180%;
-  color: #525252;
-}
-
-.page-details .store-review .media-body h5 {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 180%;
-  color: #0c0d36;
 }
 
 .page-auth .row-login {
@@ -10964,32 +10891,32 @@ form-control {
   min-width: 70%;
 }
 
-.page-auth .section-store-auth h2 {
+.page-auth .section-auth h2 {
   font-size: 28px;
   color: #0c0d36;
   font-weight: 200;
   margin-top: 0;
 }
 
-.page-auth .section-store-auth .form-control {
+.page-auth .section-auth .form-control {
   background: #f3f3f3;
   border-radius: 8px;
 }
 
-.page-auth .section-store-auth .btn-signup {
+.page-auth .section-auth .btn-signup {
   color: #212529;
   background-color: #f3f3f3;
   border-color: transparent;
   color: #bbbbbb;
 }
 
-.page-auth .section-store-auth .btn-signup:hover {
+.page-auth .section-auth .btn-signup:hover {
   color: #212529;
   background-color: #e0e0e0;
   border-color: rgba(0, 0, 0, 0);
 }
 
-.page-auth .section-store-auth .btn-signup:focus, .page-auth .section-store-auth .btn-signup.focus {
+.page-auth .section-auth .btn-signup:focus, .page-auth .section-auth .btn-signup.focus {
   color: #212529;
   background-color: #e0e0e0;
   border-color: rgba(0, 0, 0, 0);
@@ -10997,21 +10924,21 @@ form-control {
           box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
 }
 
-.page-auth .section-store-auth .btn-signup.disabled, .page-auth .section-store-auth .btn-signup:disabled {
+.page-auth .section-auth .btn-signup.disabled, .page-auth .section-auth .btn-signup:disabled {
   color: #212529;
   background-color: #f3f3f3;
   border-color: transparent;
 }
 
-.page-auth .section-store-auth .btn-signup:not(:disabled):not(.disabled):active, .page-auth .section-store-auth .btn-signup:not(:disabled):not(.disabled).active,
-.show > .page-auth .section-store-auth .btn-signup.dropdown-toggle {
+.page-auth .section-auth .btn-signup:not(:disabled):not(.disabled):active, .page-auth .section-auth .btn-signup:not(:disabled):not(.disabled).active,
+.show > .page-auth .section-auth .btn-signup.dropdown-toggle {
   color: #212529;
   background-color: #dadada;
   border-color: rgba(0, 0, 0, 0);
 }
 
-.page-auth .section-store-auth .btn-signup:not(:disabled):not(.disabled):active:focus, .page-auth .section-store-auth .btn-signup:not(:disabled):not(.disabled).active:focus,
-.show > .page-auth .section-store-auth .btn-signup.dropdown-toggle:focus {
+.page-auth .section-auth .btn-signup:not(:disabled):not(.disabled):active:focus, .page-auth .section-auth .btn-signup:not(:disabled):not(.disabled).active:focus,
+.show > .page-auth .section-auth .btn-signup.dropdown-toggle:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
           box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
 }
@@ -11048,7 +10975,7 @@ form-control {
   margin-left: 0;
 }
 
-.page-dashboard .navbar-store {
+.page-dashboard .navbar-custom {
   margin-top: 0;
   background-color: #f5f5fb;
   -webkit-box-shadow: 0px 4px 5px #cacad1;
@@ -11056,7 +10983,7 @@ form-control {
 }
 
 @media (min-width: 768px) {
-  .page-dashboard .navbar-store {
+  .page-dashboard .navbar-custom {
     background-color: transparent;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -11172,52 +11099,6 @@ form-control {
   font-size: 18px;
   text-align: center;
   margin-top: 12px;
-}
-
-.component-products {
-  margin-bottom: 20px;
-}
-
-.component-products:hover {
-  text-decoration: none;
-}
-
-.component-products .products-thumbnail {
-  width: 100%;
-  height: 150px;
-  border-radius: 8px;
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-}
-
-.component-products .products-thumbnail:hover .products-image, .component-products .products-thumbnail:focus .products-image {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.component-products .products-thumbnail .products-image {
-  width: 100%;
-  height: 100%;
-  background-color: #ddd;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.component-products .products-text {
-  color: #0c0d36;
-  margin-top: 12px;
-  font-weight: normal;
-  font-size: 18px;
-}
-
-.component-products .products-price {
-  font-weight: 500;
-  font-size: 16px;
-  color: #c00500;
 }
 
 .card {

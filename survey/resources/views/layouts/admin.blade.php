@@ -58,7 +58,7 @@
             <!-- Page Content -->
         <div id="page-content-wrapper">
             <nav
-            class="navbar navbar-store navbar-expand-lg navbar-light fixed-top"
+            class="navbar navbar-custom navbar-expand-lg navbar-light fixed-top"
             data-aos="fade-down"
             >
                 <button

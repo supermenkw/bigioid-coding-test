@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="page-content page-auth mt-5" id="register">
-    <div class="section-store-auth" data-aos="fade-up">
+    <div class="section-auth" data-aos="fade-up">
     <div class="container">
         <div class="row justify-content-center" style="margin-top: 100px;">
         <div class="col-lg-4">
@@ -147,16 +147,7 @@
                         console.log(response.data);
                     })
             }
-        },
-        data() {
-            return {
-                name: "",
-                email: "",
-                is_store_open: true,
-                store_name: "",
-                email_unavailable: false
-            }
-        },
+        }
     });
     </script>
 @endpush

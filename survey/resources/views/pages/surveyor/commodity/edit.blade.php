@@ -63,7 +63,7 @@
                                             <div class="form-group">
                                             <label for="units">Units</label>
                                                 <select name="units" class="form-control">
-                                                    <option value="{{ $item->name}}">{{ $item->units}}</option>
+                                                    <option value="{{ $item->units}}">{{ $item->units}}</option>
                                                     <option value="IDR/Barrel">IDR per Barrel</option>
                                                     <option value="IDR/Troy Ounce">IDR per Troy Ounce</option>
                                                     <option value="IDR/MBBTu">IDR per MBBTu</option>

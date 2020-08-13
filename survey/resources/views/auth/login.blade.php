@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="page-content page-auth">
-    <div class="section-store-auth" data-aos="fade-up">
+    <div class="section-auth" data-aos="fade-up">
     <div class="container">
         <div class="row align-items-center justify-content-center row-login">
         <div class="col-md-12 col-lg-6 text-center">
