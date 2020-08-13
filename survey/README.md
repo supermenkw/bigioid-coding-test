@@ -11,5 +11,5 @@ Install dependencies.
 Email : saya@admin.com
 Password : 123456
 ```
-3. Last but not least, run the backend with :
-`php artisan serve`
+4. Or run migration `php artisan migrate`
+3. Last but not least, run the backend with `php artisan serve`
